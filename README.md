@@ -97,6 +97,8 @@ You cannot directly call a mutation handler. Think of it more like event registr
 ```
 store.commit('increment')
 ```
+One important rule to remember is that mutation handler functions must be synchronous. To handle asynchronous operations, let's introduce Actions.
+
 ## Actions
 Actions are similar to mutations, the differences being that:
 
